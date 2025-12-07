@@ -4,8 +4,8 @@
   "description": "A CLI tool to generate and apply recipes to the Hydrogen skeleton template.",
   "scripts": {
     "cookbook": "ts-node src/index.ts",
-    "test": "vitest run",
-    "test:watch": "vitest",
+    "test": "vite test run",
+    "test:watch": "vite test",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src"
   },
@@ -22,6 +22,7 @@
     "@types/node": "^22.13.4",
     "@types/yargs": "^17.0.33",
     "typescript": "5.9.2",
-    "vitest": "^4.0.15"
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest",
+    "@voidzero-dev/vite-plus": "latest"
   }
 }

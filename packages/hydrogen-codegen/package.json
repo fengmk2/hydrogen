@@ -16,8 +16,8 @@
     "build": "tsup --clean",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "test": "cross-env SHOPIFY_UNIT_TEST=1 vitest run --typecheck",
-    "test:watch": "cross-env SHOPIFY_UNIT_TEST=1 vitest --typecheck"
+    "test": "cross-env SHOPIFY_UNIT_TEST=1 vite test run --typecheck",
+    "test:watch": "cross-env SHOPIFY_UNIT_TEST=1 vite test --typecheck"
   },
   "exports": {
     ".": {
@@ -42,7 +42,8 @@
     "dts-bundle-generator": "^9.5.1",
     "tinyrainbow": "^1.2.0",
     "type-fest": "^4.33.0",
-    "vitest": "^4.0.15"
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest",
+    "@voidzero-dev/vite-plus": "latest"
   },
   "dependencies": {
     "@shopify/graphql-codegen": "^0.1.0"
