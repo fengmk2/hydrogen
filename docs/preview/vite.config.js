@@ -1,5 +1,5 @@
 import path from 'node:path';
-import {defineConfig} from 'vite';
+import {defineConfig} from '@voidzero-dev/vite-plus';
 import {vitePlugin as remix} from '@remix-run/dev';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import tailwindcss from '@tailwindcss/vite';

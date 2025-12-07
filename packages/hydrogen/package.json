@@ -20,9 +20,9 @@
     "build": "tsup --clean",
     "dev": "tsup --watch ./src --watch ../../node_modules/@shopify/hydrogen-react/dist/browser-prod/index.mjs",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
+    "test": "vite test run",
     "prepack": "npm run build",
-    "test:watch": "vitest",
+    "test:watch": "vite test",
     "build-docs": "sh ./docs/build-docs.sh && npm run format",
     "format": "prettier --write \"{src,docs}/**/*\" --ignore-unknown",
     "preview-docs": "npm run dev --prefix ../../docs/preview"
@@ -105,7 +105,8 @@
     "happy-dom": "^17.0.0",
     "react": "18.3.1",
     "schema-dts": "^1.1.2",
-    "vitest": "^4.0.15"
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest",
+    "@voidzero-dev/vite-plus": "latest"
   },
   "peerDependencies": {
     "react-router": "7.9.2",

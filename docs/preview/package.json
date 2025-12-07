@@ -26,8 +26,9 @@
     "@types/react-dom": "^18.2.7",
     "@types/react-syntax-highlighter": "^15.5.7",
     "typescript": "^5.2.2",
-    "vite": "^7.2.6",
-    "vite-tsconfig-paths": "^4.3.1"
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "vite-tsconfig-paths": "^4.3.1",
+    "@voidzero-dev/vite-plus": "latest"
   },
   "engines": {
     "node": ">=20.19.0"

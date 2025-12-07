@@ -22,7 +22,7 @@
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
     "prepack": "npm run build",
-    "test": "NODE_OPTIONS=--experimental-vm-modules vitest run --test-timeout=60000"
+    "test": "NODE_OPTIONS=--experimental-vm-modules vite test run --test-timeout=60000"
   },
   "files": [
     "dist"
@@ -71,7 +71,8 @@
     "eventsource": "^3.0.5",
     "eventsource-parser": "^2.0.1",
     "tempy": "3.1.0",
-    "vitest": "^4.0.15"
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest",
+    "@voidzero-dev/vite-plus": "latest"
   },
   "peerDependencies": {
     "vite": "^6.2.1 || ^7.2.6"

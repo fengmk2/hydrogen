@@ -122,8 +122,8 @@
     "copy-api-types": "cpy './src/storefront-api-types.d.ts' './src/customer-account-api-types.d.ts' ./dist/types/ --flat",
     "format": "prettier --write \"{src,docs}/**/*\" --ignore-unknown",
     "graphql-types": "graphql-codegen --config codegen.ts && npm run format",
-    "test": "vitest run --coverage",
-    "test:watch": "vitest",
+    "test": "vite test run --coverage",
+    "test:watch": "vite test",
     "typecheck": "run-p typecheck:*",
     "typecheck:code": "tsc --noEmit",
     "typecheck:examples": "tsc --noEmit --project tsconfig.examples.json",
@@ -164,8 +164,9 @@
     "rimraf": "^6.0.1",
     "ts-expect": "^1.3.0",
     "typescript": "5.9.2",
-    "vite": "^7.2.6",
-    "vitest": "^4.0.15"
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest",
+    "@voidzero-dev/vite-plus": "latest"
   },
   "peerDependencies": {
     "react": "18.3.1",

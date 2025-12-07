@@ -102,7 +102,8 @@
     "turbo": "2.3.4",
     "typescript": "5.9.2",
     "yorkie": "^2.0.0",
-    "zod-to-json-schema": "^3.24.6"
+    "zod-to-json-schema": "^3.24.6",
+    "@voidzero-dev/vite-plus": "latest"
   },
   "engines": {
     "node": ">=20.19.0"
@@ -128,7 +129,8 @@
   "overrides": {
     "@oclif/core": "3.26.5",
     "@shopify/cli-kit": "3.80.4",
-    "vite": "^7.2.6"
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest"
   },
   "optionalDependencies": {
     "@ast-grep/napi-linux-x64-gnu": "0.34.1",

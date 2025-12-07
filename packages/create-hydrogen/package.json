@@ -15,7 +15,7 @@
   "scripts": {
     "build": "tsup --clean",
     "dev": "tsup --watch src --watch ../cli/src",
-    "test": "vitest run --test-timeout=60000",
+    "test": "vite test run --test-timeout=60000",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -24,7 +24,8 @@
   "devDependencies": {
     "execa": "^8.0.1",
     "tempy": "3.1.0",
-    "vitest": "^4.0.15"
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest",
+    "@voidzero-dev/vite-plus": "latest"
   },
   "bin": "dist/create-app.js",
   "files": [
