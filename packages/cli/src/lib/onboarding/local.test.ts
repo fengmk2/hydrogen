@@ -341,7 +341,7 @@ describe('local templates', () => {
           installDeps: true,
         });
 
-        expect(isDirectory(`${tmpDir}/.git`)).resolves.toBeTruthy();
+        await expect(isDirectory(`${tmpDir}/.git`)).resolves.toBeTruthy();
 
         const {stdout: gitLog} = await execAsync(`git log --oneline`, {
           cwd: tmpDir,

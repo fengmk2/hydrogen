@@ -63,7 +63,7 @@ describe('build', () => {
     expect(output).toMatch('building client environment for productio');
     expect(output).toMatch('dist/client/assets/');
     expect(output).toMatch('building ssr environment for productio');
-    expect(
+    await expect(
       fileExists(joinPath(tmpDir, expectedBundlePath)),
     ).resolves.toBeTruthy();
 
