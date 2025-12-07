@@ -7,9 +7,17 @@
       "Bash(gh pr view:*)",
       "Bash(npm run ci:checks:*)",
       "Bash(npm run cookbook:*)",
-      "WebFetch(domain:gist.githubusercontent.com)"
+      "WebFetch(domain:gist.githubusercontent.com)",
+      "WebFetch(domain:v7.vite.dev)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run test:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm view:*)",
+      "Bash(cat:*)"
     ]
   },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "docs-shopify-cli",
     "docs-cloudflare-workers-sdk",
