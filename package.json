@@ -128,7 +128,7 @@
   "overrides": {
     "@oclif/core": "3.26.5",
     "@shopify/cli-kit": "3.80.4",
-    "vite": "^7.0.0"
+    "vite": "^7.2.6"
   },
   "optionalDependencies": {
     "@ast-grep/napi-linux-x64-gnu": "0.34.1",
