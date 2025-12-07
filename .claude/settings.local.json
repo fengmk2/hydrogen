@@ -14,7 +14,8 @@
       "Bash(npm run test:*)",
       "Bash(npm ls:*)",
       "Bash(npm view:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "WebFetch(domain:vitest.dev)"
     ]
   },
   "enableAllProjectMcpServers": true,
